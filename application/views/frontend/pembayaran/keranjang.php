@@ -19,16 +19,16 @@ elseif ($keranjang == !null):
 				<?php
 				if ($stiker != null):
 					?>
-					<h4>Stiker</h4>
+					<h4>Undangan</h4>
 					<table class="table table-bordered table-shopping-cart">
 						<thead>
 						<tr>
-							<th>Foto</th>
-							<th>Panjang</th>
-							<th>Lebar</th>
+							<th>File</th>
+							<th>Halaman</th>
+							<th>Sisi</th>
 							<th>Bahan</th>
-							<th>Jumlah</th>
-							<th>Estimasi</th>
+							<th>Jumlah Halaman</th>
+							<th>Jumlah Copy</th>
 							<th>Total</th>
 							<th>Hapus</th>
 						</tr>
@@ -41,11 +41,11 @@ elseif ($keranjang == !null):
 								<td><img src="<?= base_url('assets/images/stiker/') . $value['stiker_foto'] ?>"
 										 alt="foto"
 										 style="width: 100%"></td>
-								<td><?= $value['stiker_panjang'] ?> m</td>
-								<td><?= $value['stiker_lebar'] ?> m</td>
+								<td><?= $value['stiker_panjang'] ?>halaman</td>
+								<td><?= $value['stiker_lebar'] ?>sisi</td>
 								<td><?= $value['stiker_bahan'] ?></td>
 								<td><?= $value['stiker_jumlah'] ?> </td>
-								<td><?= $value['stiker_estimasi'] ?> Hari</td>
+								<td><?= $value['stiker_estimasi'] ?></td>
 								<td style="text-align: right"> Rp.<?= nominal($value['stiker_total']) ?></td>
 								<td><a class="fa fa-close table-shopping-remove"
 									   href="<?= base_url('hapus/stiker/' . $value['stiker_id']) ?>"
@@ -63,16 +63,16 @@ elseif ($keranjang == !null):
 				<?php
 				if ($spanduk != null):
 					?>
-					<h4>Spanduk</h4>
+					<h4>Print</h4>
 					<table class="table table-bordered table-shopping-cart">
 						<thead>
 						<tr>
-							<th>Foto</th>
-							<th>Panjang</th>
-							<th>Lebar</th>
+							<th>File</th>
+							<th>Halaman</th>
+							<th>Sisi</th>
 							<th>Bahan</th>
-							<th>Jumlah</th>
-							<th>Estimasi</th>
+							<th>Jumlah Halaman</th>
+							<th>Jumlah Print</th>
 							<th>Total</th>
 							<th>Hapus</th>
 						</tr>
@@ -85,8 +85,8 @@ elseif ($keranjang == !null):
 								<td><img src="<?= base_url('assets/images/spanduk/') . $value['spanduk_foto'] ?>"
 										 alt="foto"
 										 style="width: 100%"></td>
-								<td><?= $value['spanduk_panjang'] ?> m</td>
-								<td><?= $value['spanduk_lebar'] ?> m</td>
+								<td><?= $value['spanduk_panjang'] ?>halaman</td>
+								<td><?= $value['spanduk_lebar'] ?>sisi</td>
 								<td><?= $value['spanduk_bahan'] ?></td>
 								<td><?= $value['spanduk_jumlah'] ?> </td>
 								<td><?= $value['spanduk_estimasi'] ?> Hari</td>

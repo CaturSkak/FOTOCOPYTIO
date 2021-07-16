@@ -5,69 +5,23 @@
 		<div class="row row-col-gap" data-gutter="60">
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Tentang Kami</h4>
-				<p>Surya Madani Digital Printing melayani : digital printing , seperti cetak spanduk, sticker, banner, poster, dan baliho.</p>
-				<ul class="main-footer-social-list">
-					<li>
-						<a class="fa fa-facebook" href="#"></a>
-					</li>
-					<li>
-						<a class="fa fa-twitter" href="#"></a>
-					</li>
-					<li>
-						<a class="fa fa-pinterest" href="#"></a>
-					</li>
-					<li>
-						<a class="fa fa-instagram" href="#"></a>
-					</li>
-					<li>
-						<a class="fa fa-google-plus" href="#"></a>
-					</li>
-				</ul>
+				<p>Fotocopy Tio adalah sebuah usaha pelayanan jasa yang bergerak dibidang Fotocopy, Usaha tersebut beralamat di jalan P.b Sudirman 080, Krajan timur, No. 80, Tempeh tengah, Lumajang dan di dirikan tahun 2003. Usaha Fotocopy buka mulai dari pukul 09.00 – 22.00.<a class="fa fa-google-plus" href="#"></a>
+					</p>
 			</div>
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Alamat</h4>
-				<p>Jalan Mr SM Amin No.21, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28292</p>
+				<p>jalan P.b Sudirman 080, Krajan timur, No.08<br>
+Tempeh tengah, Lumajang<br>
+Jawa TImur</p>
 			</div>
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Kontak</h4>
-				<p>Sapriadi Arsyad S.Kom</p>
-				<p>0813-7859-0777</p>
-				<p>Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a></p>
+				<h4 class="widget-title-sm"><br>
+				  <strong>Phone:</strong>082264144712<br>
+		        <strong>Email:</strong> FotocopyTio@gmail.com</h4>
 			</div>
 			<div class="col-md-3">
-				<h4 class="widget-title-sm">Jam Buka</h4>
-				<table>
-					<tr>
-						<td style="padding: 3px;">Senin</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Selasa</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Rabu</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Kamis</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Jum'at</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Sabtu</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-				</table>
+				<h4 class="widget-title-sm">&nbsp;</h4>
 			</div>
 		</div>
 

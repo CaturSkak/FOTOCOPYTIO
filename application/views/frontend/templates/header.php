@@ -3,7 +3,7 @@
 
 
 <head>
-	<title><?=$title?></title>
+	<title>FOTOCOPY TIO</title>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 	<meta name="keywords" content="Template, html, premium, themeforest"/>
@@ -237,21 +237,16 @@
 						class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?= base_url('') ?>">
-					<p style="color: white;"><i class="fa fa-print"></i> Surya Madani Digital Printing</p></a>
+					<p style="color: white;"><i class="fa fa-print"></i>FOTOCOPY TIO</p></a>
 			</div>
 			<div class="collapse navbar-collapse" id="main-nav-collapse">
 				<ul class="nav navbar-nav">
 					<li class="dropdown"><a href="#"><i class="fa fa-reorder"></i>&nbsp; Pesan Sekarang<i
 								class="drop-caret" data-toggle="dropdown"></i></a>
 						<ul class="dropdown-menu dropdown-menu-category">
-							<li><a href="<?= base_url('stiker') ?>"><i class="fa fa-sticky-note dropdown-menu-category-icon"></i>Stiker</a>
+							<li><a href="<?= base_url('stiker') ?>"><i class="fa fa-sticky-note dropdown-menu-category-icon"></i>Undangan</a>
 							</li>
-							<li><a href="<?= base_url('spanduk') ?>"><i class="fa fa-photo dropdown-menu-category-icon"></i>Spanduk</a>
-							</li>
-							<li><a href="<?= base_url('kartu') ?>"><i class="fa fa-id-card dropdown-menu-category-icon"></i>Kartu Nama</a>
-							</li>
-							<li><a href="<?= base_url('brosur') ?>"><i class="fa fa-file-image-o dropdown-menu-category-icon"></i>Brosur</a>
-							</li>
+							<li><a href="<?= base_url('spanduk') ?>"><i class="fa fa-photo dropdown-menu-category-icon"></i>Print</a></li>
 						</ul>
 					</li>
 				</ul>

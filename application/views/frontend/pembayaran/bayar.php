@@ -19,7 +19,7 @@
 						<?php
 						if ($spanduk == !null):
 							?>
-							<td>Spanduk</td>
+							<td>Print</td>
 							<td><?=count($spanduk)?></td>
 							<td style="text-align: right">
 								<?php
@@ -38,7 +38,7 @@
 						<?php
 						if ($stiker == !null):
 							?>
-							<td>Stiker</td>
+							<td>Undangan</td>
 							<td><?=count($stiker)?></td>
 							<td style="text-align: right">
 								<?php
