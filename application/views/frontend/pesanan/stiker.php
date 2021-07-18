@@ -1,6 +1,6 @@
 <div class="container">
 	<header class="page-header">
-		<h1 class="page-title">Input Pesanan Fotocopy </h1>
+		<h1 class="page-title">Input Pesanan Undangan </h1>
 		<ol class="breadcrumb page-breadcrumb">
 			<li><a href="#">Home</a>
 			</li>
@@ -12,7 +12,7 @@
 	<div class="row">
 		<?= form_open('stiker' , array('enctype' => 'multipart/form-data')) ?>
 		<div class="col-md-5">
-			<h4>Upload File</h4>
+			<h4>Upload Desain Undangan</h4>
 			<div class="product-page-product-wrap">
 				<div class="clearfix">
 					<input type="file" class="dropify" name="upload" required>
@@ -26,46 +26,38 @@
 					<div class="box">
 						<div class="form-group">
 						  <div class="row">
-							  <div class="col-md-6">
-									Halaman
-								</div>
-								<div class="col-md-6">
-									Sisi
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<input type="text" class="form-control" id="panjang" name="panjang"
-										   placeholder="Halaman" required autocomplete="off">
-								</div>
-								<div class="col-md-6">
-									<input type="text" class="form-control" id="lebar" name="lebar"
-										   placeholder="Sisi" required autocomplete="off">
-								</div>
+							 
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="">Tipe Kertas<span style="color: red">*</span> :</label><br>
+							<label for="">Jenis Undangan<span style="color: red">*</span> :</label><br>
 							<select name="bahan" id="bahan" class="form-control" required>
-								<option value="biasa">A4</option>
-								<option value="bagus">HVS</option>
+								<option value="biasa">Pernikahan</option>
+								<option value="bagus">Khitan</option>
+								<option value="bagus">40-100 hari</option>
+								<option value="bagus">Syukuran/Slametan</option>
 							</select>
-						</div>
+						</div>	
 						<div class="form-group">
-							<label for="">Jumlah Halaman :</label>
-							<input type="number" name="jumlah" class="form-control" id="jumlah" onkeyup="showTotalStiker()"
-								   required autocomplete="off">
+							<label for="">Atau</label>
+							<input type="text" class="form-control" id="panjang" name="panjang"
+										   placeholder="Pilihan Bebas" required autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="">Jumlah Copy :</label>
 							<input type="number" class="form-control" required autocomplete="off" name="estimasi">
-						</div>
+						</div>	
+						<div class="form-group">
+							<label for="">Keterangan Detail Undangan :</label>
+							<input class="form-control" required autocomplete="off" name="estimasi">
+						</div>	
 						<br>
 						<div class="form-group">
 							<label for=""><span style="color: red">*</span>Detail Harga  :</label>
 							<ul>
-								<li>Hitam Putih  : Rp. 200 per lembar</li>
-								<li>Warna : Rp. 1000 per </li>
+								<li>Desain Rumit	: Rp. 20.000 per lembar</li>
+								<li>Desain Sedang	: Rp. 10.000 per lembar</li>
+								<li>Desain Biasa	: Rp. 5.000 per lembar</li>
 							</ul>
 						</div>
 					</div>

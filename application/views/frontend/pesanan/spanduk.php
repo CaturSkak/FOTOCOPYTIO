@@ -31,38 +31,54 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<input type="text" class="form-control" id="panjang" name="panjang"
-										   placeholder="Halaman" required autocomplete="off">
+								<input type="text" class="form-control" id="panjang" name="panjang"
+										   placeholder="Pilih Halaman/Semua" required autocomplete="off">
 								</div>
 								<div class="col-md-6">
 									<input type="text" class="form-control" id="lebar" name="lebar"
-										   placeholder="Sisi" required autocomplete="off">
+										   placeholder="1 Sisi ..." required autocomplete="off">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="">Tipe <span style="color: red">*</span> :</label><br>
+							<label for="">Tipe Kertas<span style="color: red">*</span> :</label><br>
 							<select name="bahan" id="bahan" class="form-control" required>
-								<option value="Biasa">A4</option>
-								<option value="Menengah">HVS</option>
+								<option value="biasa">A4</option>
+								<option value="bagus">A5</option>
+								<option value="bagus">F4(Folio)</option>
 							</select>
 						</div>
 						<div class="form-group">
-							<label for="">Jumlah Halaman :</label>
-							<input type="number" name="jumlah" class="form-control" id="jumlah" onkeyup="showTotal()"
-								   required autocomplete="off">
+							<label for="">Jilid<span style="color: red">*</span> :</label><br>
+							<select name="bahan" id="bahan" class="form-control" required>
+								<option value="biasa">Jilid</option>
+								<option value="bagus">Tidak</option>
+							</select>
+						</div>	
+						<div class="form-group">
+							<label for="">Warna Buffalo dan Cover :</label>
+							<input type="text" class="form-control" id="panjang" name="panjang"
+										   placeholder="Pilih Warna" required autocomplete="off">
 						</div>
 						<div class="form-group">
-							<label for="">Jumlah Print :</label>
+							<label for="">Jumlah Copy :</label>
 							<input type="number" class="form-control" required autocomplete="off" name="estimasi">
 						</div>
+						<div class="form-group">
+							<label for="">Jumlah Halaman :</label>
+							<input type="number" name="jumlah" class="form-control" id="jumlah" onkeyup="showTotalStiker()"
+								   required autocomplete="off">
+						</div>	
+						<div class="form-group">
+							<label for="">Catatan :</label>
+							<input class="form-control" required autocomplete="off" name="estimasi">
+						</div>	
 						<br>
 						<div class="form-group">
-							<label for=""><span style="color: red">*</span>Keterangan :</label>
+							<label for=""><span style="color: red">*</span>Detail Harga  :</label>
 							<ul>
-								<li>280g (Biasa) : Rp. 20.000 per meter</li>
-								<li>320g (Menengah) : Rp. 30.000 per meter</li>
-								<li>340g (Bagus) : Rp. 35.000 per meter</li>
+								<li>Hitam Putih	: Rp. 200 per lembar</li>
+								<li>Warna 		: Rp. 1000 per lembar</li>
 							</ul>
 						</div>
 					</div>
