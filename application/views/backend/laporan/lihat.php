@@ -18,7 +18,8 @@
 			</div>
 			<br>
 			<div>
-				<div class="laporan-header"><h3>Surya Madani Digital Printing</h3></div>
+				<div class="laporan-header">
+				  <h3>Fotocopy Tio</h3></div>
 				<div class="laporan-header"><h4>Laporan Penjualan <?php
 						if ($tipe != 'kartu') {
 							echo ucfirst($tipe);
@@ -40,8 +41,8 @@
 						<tr>
 							<th>No</th>
 							<th>Nama Pemesan</th>
-							<th>Ukuran</th>
-							<th>Jenis Bahan</th>
+							<th>Halaman</th>
+							<th>Tipe print</th>
 							<th>Jumlah</th>
 							<th>Total</th>
 						</tr>
@@ -55,7 +56,7 @@
 							<tr>
 								<td><?= $no ?></td>
 								<td><?= $value['pengguna_nama'] ?></td>
-								<td><?= $value['spanduk_panjang'] ?> m x <?= $value['spanduk_lebar'] ?> m</td>
+								<td><?= $value['spanduk_panjang'] ?></td>
 								<td>
 									<?php
 									if ($value['spanduk_bahan'] == 'bagus') {
@@ -92,8 +93,8 @@
 						<tr>
 							<th>No</th>
 							<th>Nama Pemesan</th>
-							<th>Ukuran</th>
-							<th>Jenis Bahan</th>
+							<th>Halaman</th>
+							<th>Tipe print</th>
 							<th>Jumlah</th>
 							<th>Total</th>
 						</tr>
@@ -107,7 +108,7 @@
 							<tr>
 								<td><?= $no ?></td>
 								<td><?= $value['pengguna_nama'] ?></td>
-								<td><?= $value['stiker_panjang'] ?> m x <?= $value['stiker_lebar'] ?> m</td>
+								<td><?= $value['stiker_panjang'] ?></td>
 								<td>
 									<?php
 									if ($value['stiker_bahan'] == 'biasa') {
@@ -165,7 +166,7 @@
 									}
 									?>
 								</td>
-								<td><?= $value['kartu_jumlah'] ?> kotak</td>
+								<td><?= $value['kartu_jumlah'] ?></td>
 								<td>Rp. <?= nominal($value['kartu_total']) ?></td>
 							</tr>
 							<?php
@@ -188,9 +189,9 @@
 						<thead>
 						<tr>
 							<th>No</th>
-							<th>Ukuran Kertas</th>
+							<th>Halaman</th>
 							<th>Nama Pemesan</th>
-							<th>Jenis Bahan</th>
+							<th>Tipe print</th>
 							<th>Jumlah</th>
 							<th>Total</th>
 						</tr>
@@ -206,7 +207,7 @@
 								<td><?= $value['pengguna_nama'] ?></td>
 								<td><?= $value['brosur_ukuran'] ?></td>
 								<td><?= ucfirst($value['brosur_bahan']) ?></td>
-								<td><?= $value['brosur_jumlah'] ?> rim</td>
+								<td><?= $value['brosur_jumlah'] ?></td>
 								<td>Rp. <?= nominal($value['brosur_total']) ?></td>
 							</tr>
 							<?php
@@ -229,12 +230,12 @@
 					<div class="col-6 text-center" >
 					</div>
 					<div class="col-6 text-center">
-						<p>Pekanbaru, <?= date_indo(date('Y-m-d')) ?></p>
+						<p>Lumajang, <?= date_indo(date('Y-m-d')) ?></p>
 						<p>Manajer</p>
 						<br>
 						<br>
 						<br>
-						<p><b><u>Sapriadi Arsyad S.Kom</u></b></p>
+						<p><b><u>Farhan Julystio S.Kom</u></b></p>
 					</div>
 				</div>
 			</div>
