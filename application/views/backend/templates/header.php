@@ -125,10 +125,8 @@
 						</a>
 						<div class="collapse" id="ui-basic">
 							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="<?=base_url('admin/laporan/spanduk')?>">Spanduk</a></li>
-								<li class="nav-item"> <a class="nav-link" href="<?=base_url('admin/laporan/stiker')?>">Stiker</a></li>
-								<li class="nav-item"> <a class="nav-link" href="<?=base_url('admin/laporan/kartu')?>">Kartu Nama</a></li>
-								<li class="nav-item"> <a class="nav-link" href="<?=base_url('admin/laporan/brosur')?>">Brosur</a></li>
+								<li class="nav-item"> <a class="nav-link" href="<?=base_url('admin/laporan/stiker')?>">Print</a></li>
+								
 							</ul>
 						</div>
 					</li>

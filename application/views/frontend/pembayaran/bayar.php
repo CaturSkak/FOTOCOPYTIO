@@ -106,8 +106,8 @@
 			<div class="box">
 				<?=form_open('bayar/'.$pesanan['keranjang_id'])?>
 				<p>Pilih Jenis Pembayaran</p>
-				<input type="radio" name="tipebayar" value="bri" required> Transfer Bank BRI <br>
-				<input type="radio" name="tipebayar" value="bni" required> Transfer Bank BNI <br>
+				<input type="radio" name="tipebayar" value="bri" required> OVO<br>
+				<input type="radio" name="tipebayar" value="bni" required> Gopay<br>
 				<br>
 				<button type="submit" class="btn btn-primary" name="selesai">Selesai</button>
 				<div class="gap gap-small"></div>

@@ -26,7 +26,7 @@ elseif ($keranjang == !null):
 							<th>File</th>
 							<th>Halaman</th>
 							<th>Sisi</th>
-							<th>Bahan</th>
+							<th>Jenis Print</th>
 							<th>Jumlah Halaman</th>
 							<th>Jumlah Copy</th>
 							<th>Total</th>

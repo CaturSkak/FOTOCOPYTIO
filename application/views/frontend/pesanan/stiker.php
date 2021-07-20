@@ -53,7 +53,7 @@
 						</div>
 						<div class="form-group">
 							<label for="">Jumlah Halaman :</label>
-							<input type="number" name="jumlah" class="form-control" id="jumlah" onkeyup="showTotalStiker()"
+							<input type="number" name="jumlah" class="form-control" id="jumlah" 
 								   required autocomplete="off">
 						</div>
 						<div class="form-group">
@@ -71,9 +71,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="box-highlight">
-						<h4>Total</h4>
-						<div id="total"><h3>0</h3></div>
+					
 						<button type="submit" class="btn btn-block btn-primary" name="keranjang"><i
 								class="fa fa-shopping-cart"></i>Add to cart
 						</button>
