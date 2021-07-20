@@ -29,7 +29,7 @@
 					<div class="col-12">
 						<br>
 						<button type="button" onclick="return window.history.back();" class="btn btn-secondary">Kembali</button>
-						<a href="<?=base_url('assets/images/stiker/'.$stiker['stiker_foto'])?>" class="btn btn-primary"download>Download</a>
+						<a href="<?=base_url('admin/pesanan/desain/'.$stiker['stiker_id'])?>" class="btn btn-primary">Lihat hasil desain</a>
 					</div>
 				</div>
 			<?php
