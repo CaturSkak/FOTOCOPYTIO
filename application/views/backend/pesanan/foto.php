@@ -22,14 +22,13 @@
 			if ($stiker != null):
 			?>
 			<h3 class="card-title">
-				Foto Stiker
-			</h3>
+				File Print</h3>
 			<img src="<?=base_url('assets/images/stiker/'.$stiker['stiker_foto'])?>" style="width: 100%" alt="">
 				<div class="row">
 					<div class="col-12">
 						<br>
 						<button type="button" onclick="return window.history.back();" class="btn btn-secondary">Kembali</button>
-						<a href="<?=base_url('admin/pesanan/desain/'.$stiker['stiker_id'])?>" class="btn btn-primary">Lihat hasil desain</a>
+						<a href="<?=base_url('admin/pesanan/desain/'.$stiker['stiker_id'])?>" class="btn btn-primary">Download</a>
 					</div>
 				</div>
 			<?php

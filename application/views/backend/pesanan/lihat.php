@@ -74,15 +74,16 @@
 				<?php
 				if ($stiker == !null):
 					?>
-					<h5>Stiker</h5>
+					<h5>Print</h5>
 					<table class="table table-bordered">
 						<thead>
 						<tr>
 							<th>No</th>
-							<th>Ukuran (m)</th>
-							<th>Jenis Bahan</th>
+							<th>Halaman</th>
+							<th>Sisi</th>
+							<th>Tipe Print</th>
 							<th>Jumlah</th>
-							<th>Foto</th>
+							<th>File</th>
 						</tr>
 						</thead>
 						<tbody>
@@ -92,7 +93,8 @@
 							?>
 							<tr>
 								<td><?= $no ?></td>
-								<td><?= $value['stiker_panjang'] ?> x <?= $value['stiker_lebar'] ?> </td>
+								<td><?= $value['stiker_panjang'] ?></td>
+								<td><?= $value['stiker_lebar'] ?></td>
 								<td><?= $value['stiker_bahan'] ?></td>
 								<td><?= $value['stiker_jumlah'] ?></td>
 								<td>
