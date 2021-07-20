@@ -130,7 +130,7 @@
 							<?php
 							if ($stiker == !null):
 								?>
-								<td>Stiker</td>
+								<td>Print</td>
 								<td><?= count($stiker) ?></td>
 								<td style="text-align: right">
 									<?php
