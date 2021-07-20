@@ -23,7 +23,7 @@ class BayarController extends CI_Controller{
 			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
 			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
 			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
-			'title' => 'Keranjang | Surya Madani Digital Printing'
+			'title' => 'Keranjang | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pembayaran/keranjang',$data);
@@ -53,7 +53,7 @@ class BayarController extends CI_Controller{
 			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
 			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
 			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
-			'title' => 'Pembayaran | Surya Madani Digital Printing'
+			'title' => 'Pembayaran | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pembayaran/bayar',$data);
@@ -61,13 +61,13 @@ class BayarController extends CI_Controller{
 	}
 	public function selesai($bank,$id){
 		$dataBank = array(
-			'bni' => 'Bank BNI 123456789 Atas Nama Surya Madani ',
-			'bri' => 'Bank BRI 115511026 Atas Nama Surya Madani '
+			'bni' => 'Bank BNI 123456789 Atas Nama Farhan Julystio ',
+			'bri' => 'Bank BRI 115511026 Atas Nama Farhan Julystio '
 		);
 		$data = array(
 			'bank' => $dataBank[$bank],
 			'pesanan' => $this->BayarModel->lihat_keranjang_status_selesai($this->session->userdata('session_id'),'bayar_menunggu',$id)->row_array(),
-			'title' => 'Terima Kasih | Surya Madani Digital Printing'
+			'title' => 'Terima Kasih | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pembayaran/selesai',$data);
@@ -112,7 +112,7 @@ class BayarController extends CI_Controller{
 			}
 		} else {
 			$data = array(
-				'title' => 'Konfirmasi Pembayaran | Surya Madani Digital Printing',
+				'title' => 'Konfirmasi Pembayaran | Fotocopy Tio',
 				'pesanan' => $this->BayarModel->lihat_keranjang_faktur_by_id($id,$this->session->userdata('session_id'),'belum')->row_array(),
 			);
 			$this->load->view('frontend/templates/header',$data);

@@ -98,7 +98,7 @@ class PesanController extends CI_Controller
 			}
 		}
 		$data = array(
-			'title' => 'Pesan Spanduk | Surya Madani Digital Printing'
+			'title' => 'Pesan Spanduk | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pesanan/spanduk');
@@ -185,7 +185,7 @@ class PesanController extends CI_Controller
 			}
 		}
 		$data = array(
-			'title' => 'Pesan Stiker | Surya Madani Digital Printing'
+			'title' => 'Pesan Stiker | Fotocopy	Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pesanan/stiker');
@@ -268,7 +268,7 @@ class PesanController extends CI_Controller
 			}
 		}
 		$data = array(
-			'title' => 'Pesan Kartu Nama | Surya Madani Digital Printing'
+			'title' => 'Pesan Kartu Nama | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pesanan/kartu');
@@ -352,7 +352,7 @@ class PesanController extends CI_Controller
 			}
 		}
 		$data = array(
-			'title' => 'Pesan Brosur | Surya Madani Digital Printing'
+			'title' => 'Pesan Brosur | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/pesanan/brosur');

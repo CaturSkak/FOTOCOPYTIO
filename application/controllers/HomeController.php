@@ -10,7 +10,7 @@ class HomeController extends CI_Controller{
 	public function index()
 	{
 		$data = array(
-			'title' => 'Surya Madani Digital Printing'
+			'title' => 'Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/index');

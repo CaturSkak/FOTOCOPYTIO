@@ -62,14 +62,14 @@ class TransaksiController extends CI_Controller
 		$config['protocol'] = "smtp";
 		$config['smtp_host'] = "ssl://smtp.googlemail.com";
 		$config['smtp_port'] = 465;
-		$config['smtp_user'] = "suryamadanidigitalprinting@gmail.com";
-		$config['smtp_pass'] = "suryamadani123";
+		$config['smtp_user'] = "fotocopytio@gmail.com";
+		$config['smtp_pass'] = "fotocopytio123";
 		$config['charset'] = "utf-8";
 		$config['mailtype'] = "html";
 		$config['newline'] = "\r\n";
 
 		$this->email->initialize($config);
-		$this->email->from('suryamadanidigitalprinting@gmail.com', 'Surya Madani Digital Printing');
+		$this->email->from('fotocopytio@gmail.com', 'Fotocopy Tio');
 		$list = array($transaksi['pengguna_email']);
 		$this->email->to($list);
 		$this->email->subject('Pesanan Selesai');

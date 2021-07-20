@@ -18,7 +18,7 @@ class ProfilController extends CI_Controller
 	}
 	public function index(){
 		$data = array(
-			'title' => 'Profil | Surya Madani Digital Printing'
+			'title' => 'Profil | Fotocopy Tio'
 		);
 		$this->load->view('frontend/templates/header',$data);
 		$this->load->view('frontend/profil/index');
@@ -26,7 +26,7 @@ class ProfilController extends CI_Controller
 	}
 	public function pesanan(){
 		$data = array(
-			'title' => 'Pesanan | Surya Madani Digital Printing',
+			'title' => 'Pesanan | Fotocopy Tio',
 			'pesanan' => $this->BayarModel->lihat_keranjang_faktur($this->session->userdata('session_id'))->result_array(),
 		);
 		$this->load->view('frontend/templates/header',$data);
@@ -36,7 +36,7 @@ class ProfilController extends CI_Controller
 	public function detailPesanan($id){
 		$pesanan = $this->BayarModel->lihat_keranjang_faktur_by_id($id,$this->session->userdata('session_id'))->row_array();
 		$data = array(
-			'title' => 'Detail Pesanan | Surya Madani Digital Printing',
+			'title' => 'Detail Pesanan | Fotocopy Tio',
 			'pesanan' => $pesanan,
 			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'),'bayar_menunggu',$pesanan['keranjang_id'])->result_array(),
 			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'bayar_menunggu',$pesanan['keranjang_id'])->result_array(),
@@ -50,7 +50,7 @@ class ProfilController extends CI_Controller
 	public function desain($id){
 		$pesanan = $this->BayarModel->lihat_keranjang_faktur_by_id($id,$this->session->userdata('session_id'))->row_array();
 		$data = array(
-			'title' => 'Data Desain | Surya Madani Digital Printing',
+			'title' => 'Data Desain | Fotocopy Tio',
 			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'),'bayar_menunggu',$pesanan['keranjang_id'])->result_array(),
 			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'bayar_menunggu',$pesanan['keranjang_id'])->result_array(),
 			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'),'bayar_menunggu',$pesanan['keranjang_id'])->result_array(),
@@ -73,7 +73,7 @@ class ProfilController extends CI_Controller
 			redirect('pesanan');
 		} else {
 			$data = array(
-				'title' => 'Detail Desain | Surya Madani Digital Printing',
+				'title' => 'Detail Desain | Fotocopy Tio',
 				'produk' => $this->PesanModel->lihat_desain('sipesan_desain','desain_produk_id',$id),
 				'id' => $id
 			);

@@ -45,7 +45,7 @@ class AuthController extends CI_Controller {
 			}
 		} else {
 			$data = array(
-				'title' => 'Login | Surya Madani Digital Printing'
+				'title' => 'Login | Fotocopy Tio'
 			);
 			$this->load->view('frontend/templates/header',$data);
 			$this->load->view('frontend/auth/login');
