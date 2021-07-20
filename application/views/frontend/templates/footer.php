@@ -31,7 +31,7 @@
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Kontak</h4>
 				<p>FotocopyTio@gmail.com</p>
-				<p>082264144712</p>
+				<p>0822 - 6414 - 4712</p>
 				
 			</div>
 			<div class="col-md-3">

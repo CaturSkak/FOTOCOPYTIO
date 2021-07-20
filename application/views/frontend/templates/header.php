@@ -237,7 +237,7 @@
 						class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?= base_url('') ?>">
-					<p style="color: white;"><i class="fa fa-print"></i> Surya Madani Digital Printing</p></a>
+					<p style="color: white;"><i class="fa fa-print"></i> Fotocopy Tio</p></a>
 			</div>
 			<div class="collapse navbar-collapse" id="main-nav-collapse">
 				<ul class="nav navbar-nav">
