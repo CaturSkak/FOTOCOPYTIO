@@ -5,7 +5,7 @@
 		<div class="row row-col-gap" data-gutter="60">
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Tentang Kami</h4>
-				<p>Surya Madani Digital Printing melayani : digital printing , seperti cetak spanduk, sticker, banner, poster, dan baliho.</p>
+				<p>FotoCopy Tio melayani : Digital printing dan FotoCopy.</p>
 				<ul class="main-footer-social-list">
 					<li>
 						<a class="fa fa-facebook" href="#"></a>
@@ -26,46 +26,23 @@
 			</div>
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Alamat</h4>
-				<p>Jalan Mr SM Amin No.21, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28292</p>
+				<p>Jalan P.b Sudirman 080, Krajan timur, No. 80,Tempeh tengah, Lumajang </p>
 			</div>
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Kontak</h4>
-				<p>Sapriadi Arsyad S.Kom</p>
-				<p>0813-7859-0777</p>
-				<p>Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a></p>
+				<p>FotocopyTio@gmail.com</p>
+				<p>082264144712</p>
+				
 			</div>
 			<div class="col-md-3">
 				<h4 class="widget-title-sm">Jam Buka</h4>
 				<table>
 					<tr>
-						<td style="padding: 3px;">Senin</td>
+						<td style="padding: 3px;">Setiap Hari</td>
 						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
+						<td style="padding: 3px;">09.00 – 22.00</td>
 					</tr>
-					<tr>
-						<td style="padding: 3px;">Selasa</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Rabu</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Kamis</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Jum'at</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
-					</tr>
-					<tr>
-						<td style="padding: 3px;">Sabtu</td>
-						<td style="padding: 3px;"> : </td>
-						<td style="padding: 3px;">08.00 – 18.00</td>
+					
 					</tr>
 				</table>
 			</div>
