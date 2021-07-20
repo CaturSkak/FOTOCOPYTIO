@@ -45,10 +45,10 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="">Tipe Kertas :</label><br>
+							<label for="">Tipe Print :</label><br>
 							<select name="bahan" id="bahan" class="form-control" required>
-								<option value="biasa">Biasa </option>
-								<option value="bagus">Bagus </option>
+								<option value="Print Digital">Print Digital</option>
+								<option value="Print Biasa">Print Biasa</option>
 							</select>
 						</div>
 						<div class="form-group">
@@ -64,8 +64,8 @@
 						<div class="form-group">
 							<label for=""><span style="color: red">*</span>Keterangan :</label>
 							<ul>
-								<li>Biasa (HVS) : Rp. 500 per lembar</li>
-								<li>Bagus (A4) : Rp. 1000 per lembar</li>
+								<li>Print Digital : Rp. 200 per lembar</li>
+								<li>Print Biasa   : Rp. 500 per lembar</li>
 							</ul>
 						</div>
 					</div>

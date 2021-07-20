@@ -114,10 +114,10 @@ class PesanController extends CI_Controller
 			$jumlah = $this->input->post('jumlah');
 			$estimasi = $this->input->post('estimasi');
 			$total = 0;
-			if ($bahan == 'biasa') {
-				$total = ($panjang * $lebar) * $jumlah * 500;
-			} elseif ($bahan == 'bagus') {
-				$total = ($panjang * $lebar) * $jumlah * 1000;
+			if ($bahan == 'Print Digital') {
+				$total = ($estimasi * $lebar) * $jumlah * 200;
+			} elseif ($bahan == 'Print Biasa') {
+				$total = ($estimasi * $lebar) * $jumlah * 500;
 			}
 
 			$config['upload_path'] = './assets/images/stiker/';
