@@ -11,14 +11,14 @@
 					<div class="box">
 						<?=form_open('konfirmasi/'.$pesanan['faktur_id'],array('enctype' => 'multipart/form-data'))?>
 						<div class="form-group">
-							<label for="">Nomor Rekening :</label>
+							<label for="">Nomor Ovo / Gopay :</label>
 							<input type="number" class="form-control" id="rekening" name="rekening"
-								   placeholder="Nomor Rekening" required autocomplete="off">
+								   placeholder="Nomor Ovo" required autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="">Atas Nama :</label><br>
 							<input type="text" class="form-control" id="atas_nama" name="atas_nama"
-								   placeholder="Nomor Rekening" required autocomplete="off">
+								   placeholder="Nama" required autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="">Nominal Transfer (Rp.) :</label>

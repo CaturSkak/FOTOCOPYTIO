@@ -61,8 +61,8 @@ class BayarController extends CI_Controller{
 	}
 	public function selesai($bank,$id){
 		$dataBank = array(
-			'bni' => 'Ovo 082264144712 Atas Nama Farhan Julystio ',
-			'bri' => 'Gopay 082264144712 Atas Nama Farhan Julystio '
+			'bni' => 'Gopay 082264144712 Atas Nama Farhan Julystio ',
+			'bri' => 'Ovo 082264144712 Atas Nama Farhan Julystio '
 		);
 		$data = array(
 			'bank' => $dataBank[$bank],
