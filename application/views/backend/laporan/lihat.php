@@ -20,19 +20,7 @@
 			<div>
 				<div class="laporan-header">
 				  <h3>Fotocopy Tio</h3></div>
-				<div class="laporan-header"><h4>Laporan Penjualan <?php
-						if ($tipe != 'kartu') {
-							echo ucfirst($tipe);
-						} else {
-							echo 'Kartu Nama';
-						}
-						?>  <?php
-						if ($tanggal != null){
-							echo 'Tanggal '.date_indo($tanggal);
-						} else {
-							echo 'Bulan '.bulan($bulan) .' '. date('Y');
-						}
-						?></h4></div>
+				<div class="laporan-header"><h4>Laporan </h4></div>
 				<table class="table table-bordered">
 					<?php
 					if ($tipe == 'spanduk'):
