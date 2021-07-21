@@ -20,7 +20,19 @@
 			<div>
 				<div class="laporan-header">
 				  <h3>Fotocopy Tio</h3></div>
-				<div class="laporan-header"><h4>Laporan </h4></div>
+				<div class="laporan-header"><h4>Laporan Penjualan <?php
+						if ($tipe != 'kartu') {
+							echo ucfirst($tipe);
+						} else {
+							echo 'Kartu Nama';
+						}
+						?>  <?php
+						if ($tanggal != null){
+							echo 'Tanggal '.date_indo($tanggal);
+						} else {
+							echo 'Bulan '.bulan($bulan) .' '. date('Y');
+						}
+						?></h4></div>
 				<table class="table table-bordered">
 					<?php
 					if ($tipe == 'spanduk'):
@@ -97,15 +109,7 @@
 								<td><?= $no ?></td>
 								<td><?= $value['pengguna_nama'] ?></td>
 								<td><?= $value['stiker_panjang'] ?></td>
-								<td>
-									<?php
-									if ($value['stiker_bahan'] == 'biasa') {
-										echo 'Biasa (China)';
-									} elseif ($value['stiker_bahan'] == 'bagus') {
-										echo 'Bagus (Ritrama)';
-									}
-									?>
-								</td>
+								<td><?= $value['stiker_bahan'] ?></td>
 								<td><?= $value['stiker_jumlah'] ?> </td>
 								<td>Rp. <?= nominal($value['stiker_total']) ?></td>
 							</tr>
