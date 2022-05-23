@@ -1,8 +1,9 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class BayarController extends CI_Controller{
+class BayarController extends CI_Controller
+{
 	public function __construct()
 	{
 		parent::__construct();
@@ -15,22 +16,24 @@ class BayarController extends CI_Controller{
 			redirect(base_url('login'));
 		}
 	}
-	public function keranjang(){
-		$keranjang = $this->BayarModel->lihat_keranjang_status($this->session->userdata('session_id'),'belum')->row_array();
+	public function keranjang()
+	{
+		$keranjang = $this->BayarModel->lihat_keranjang_status($this->session->userdata('session_id'), 'belum')->row_array();
 		$data = array(
 			'keranjang' => $keranjang,
-			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
-			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
-			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
-			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'),'belum',$keranjang['keranjang_id'])->result_array(),
+			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'), 'belum', $keranjang['keranjang_id'])->result_array(),
+			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'), 'belum', $keranjang['keranjang_id'])->result_array(),
+			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'), 'belum', $keranjang['keranjang_id'])->result_array(),
+			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'), 'belum', $keranjang['keranjang_id'])->result_array(),
 			'title' => 'Keranjang | Fotocopy Tio'
 		);
-		$this->load->view('frontend/templates/header',$data);
-		$this->load->view('frontend/pembayaran/keranjang',$data);
+		$this->load->view('frontend/templates/header', $data);
+		$this->load->view('frontend/pembayaran/keranjang', $data);
 		$this->load->view('frontend/templates/footer');
 	}
-	public function bayar($id){
-		if (isset($_POST['selesai'])){
+	public function bayar($id)
+	{
+		if (isset($_POST['selesai'])) {
 			$fakturId = 'INV-' . substr(time(), 5);
 			$bank = $this->input->post('tipebayar');
 			$dataBayar = array(
@@ -41,40 +44,42 @@ class BayarController extends CI_Controller{
 				'faktur_keranjang_id' => $id,
 				'faktur_bank' => $bank
 			);
-			$this->BayarModel->update_keranjang($id,$dataBayar);
+			$this->BayarModel->update_keranjang($id, $dataBayar);
 			$this->BayarModel->simpan_faktur($dataFaktur);
 			$this->session->set_flashdata('alert', 'bayar_sukses');
-			redirect('selesai/'.$bank.'/'.$id);
+			redirect('selesai/' . $bank . '/' . $id);
 		}
-		$pesanan = $this->BayarModel->lihat_keranjang_status($this->session->userdata('session_id'),'belum')->row_array();
+		$pesanan = $this->BayarModel->lihat_keranjang_status($this->session->userdata('session_id'), 'belum')->row_array();
 		$data = array(
 			'pesanan' => $pesanan,
-			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
-			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
-			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
-			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'),'belum',$pesanan['keranjang_id'])->result_array(),
+			'spanduk' => $this->BayarModel->lihat_keranjang_spanduk($this->session->userdata('session_id'), 'belum', $pesanan['keranjang_id'])->result_array(),
+			'stiker' => $this->BayarModel->lihat_keranjang_stiker($this->session->userdata('session_id'), 'belum', $pesanan['keranjang_id'])->result_array(),
+			'kartu' => $this->BayarModel->lihat_keranjang_kartu($this->session->userdata('session_id'), 'belum', $pesanan['keranjang_id'])->result_array(),
+			'brosur' => $this->BayarModel->lihat_keranjang_brosur($this->session->userdata('session_id'), 'belum', $pesanan['keranjang_id'])->result_array(),
 			'title' => 'Pembayaran | Fotocopy Tio'
 		);
-		$this->load->view('frontend/templates/header',$data);
-		$this->load->view('frontend/pembayaran/bayar',$data);
+		$this->load->view('frontend/templates/header', $data);
+		$this->load->view('frontend/pembayaran/bayar', $data);
 		$this->load->view('frontend/templates/footer');
 	}
-	public function selesai($bank,$id){
+	public function selesai($bank, $id)
+	{
 		$dataBank = array(
 			'bni' => 'Gopay 082264144712 Atas Nama Farhan Julystio ',
 			'bri' => 'Ovo 082264144712 Atas Nama Farhan Julystio '
 		);
 		$data = array(
 			'bank' => $dataBank[$bank],
-			'pesanan' => $this->BayarModel->lihat_keranjang_status_selesai($this->session->userdata('session_id'),'bayar_menunggu',$id)->row_array(),
+			'pesanan' => $this->BayarModel->lihat_keranjang_status_selesai($this->session->userdata('session_id'), 'bayar_menunggu', $id)->row_array(),
 			'title' => 'Terima Kasih | Fotocopy Tio'
 		);
-		$this->load->view('frontend/templates/header',$data);
-		$this->load->view('frontend/pembayaran/selesai',$data);
+		$this->load->view('frontend/templates/header', $data);
+		$this->load->view('frontend/pembayaran/selesai', $data);
 		$this->load->view('frontend/templates/footer');
 	}
-	public function konfirmasi($id){
-		if (isset($_POST['konfirmasi'])){
+	public function konfirmasi($id)
+	{
+		if (isset($_POST['konfirmasi'])) {
 			$konfirmasiId = 'CFM-' . substr(time(), 5);
 			$rekening = $this->input->post('rekening');
 			$atas_nama = $this->input->post('atas_nama');
@@ -106,17 +111,17 @@ class BayarController extends CI_Controller{
 				);
 
 				$this->BayarModel->simpan_konfirmasi($data);
-				$this->BayarModel->update_faktur($id,$dataFaktur);
+				$this->BayarModel->update_faktur($id, $dataFaktur);
 				$this->session->set_flashdata('alert', 'konfirmasi_sukses');
 				redirect('pesanan');
 			}
 		} else {
 			$data = array(
 				'title' => 'Konfirmasi Pembayaran | Fotocopy Tio',
-				'pesanan' => $this->BayarModel->lihat_keranjang_faktur_by_id($id,$this->session->userdata('session_id'),'belum')->row_array(),
+				'pesanan' => $this->BayarModel->lihat_keranjang_faktur_by_id($id, $this->session->userdata('session_id'), 'belum')->row_array(),
 			);
-			$this->load->view('frontend/templates/header',$data);
-			$this->load->view('frontend/pembayaran/konfirmasi',$data);
+			$this->load->view('frontend/templates/header', $data);
+			$this->load->view('frontend/pembayaran/konfirmasi', $data);
 			$this->load->view('frontend/templates/footer');
 		}
 	}
